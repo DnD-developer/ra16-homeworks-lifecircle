@@ -1,0 +1,26 @@
+#root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+}
+
+.form {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.btn-submit {
+	padding-left: 10px;
+	padding-right: 10px;
+
+	background: none;
+
+	border: 1px solid #000000;
+
+	line-height: 20px;
+
+	cursor: pointer;
+}
