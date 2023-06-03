@@ -11,14 +11,6 @@ export default function Widjet() {
 	const [stateInputName, setStateInputName] = new useState("")
 	const [stateInpuTimeZone, setStateInpuTimeZone] = new useState("")
 
-	useEffect(() => {
-		const intervalId = onUpdateTime()
-
-		return () => {
-			clearInterval(intervalId)
-		}
-	}, [])
-
 	const onChangeInputName = text => {
 		if (text.length === 1) {
 			if (/^[A-Z]/.test(text)) {
@@ -79,14 +71,6 @@ export default function Widjet() {
 		evt.preventDefault()
 
 		setStateData(clocks => clocks.filter(clock => clock.id !== id))
-	}
-
-	const onUpdateTime = () => {
-		const intervalId = setInterval(() => {
-			setStateData(prev => prev.map(clock => ({ ...clock, time: calcTime(clock.shift) })))
-		}, 1000)
-
-		return intervalId
 	}
 
 	const stateInputs = {

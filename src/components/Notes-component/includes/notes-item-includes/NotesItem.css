@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+.notes-item {
+	position: relative;
+
+	max-width: 150px;
+	width: 100%;
+
+	height: 100px;
+
+	padding: 15px;
+
+	margin: 0;
+	margin-left: 20px;
+	margin-top: 20px;
+
+	text-align: center;
+
+	border: 1px solid #000000;
+
+	list-style: none;
+}
+
+.notes-item__text {
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+.notes-item__close {
+	position: absolute;
+
+	right: 5px;
+	top: 5px;
+
+	padding: 0;
+
+	background: none;
+	border: none;
+
+	cursor: pointer;
+}
